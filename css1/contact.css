@@ -1,0 +1,149 @@
+
+/* ----------------------- */
+
+
+body {
+    font-family: 'Lora', serif;
+  }
+  
+  .intro-contact {
+    height: 550px;
+    background-image: url('../images/contact-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactUs {
+    background: #C4EEFF;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .contactUs-title {
+    margin-bottom: 10px;
+  }
+  
+  .contactUs-subtitle {
+    font-size: 16px;
+  }
+  
+  .contactUs-cards {
+    display: flex;
+justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 0px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .contactUs-card {
+    width: 100%;
+    max-width: 420px; /* Ensures cards are responsive */
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #eaf9ff, #c4eeff); /* Unique background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+  }
+  
+  .contactUs-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contactUs-card-title {
+    font-size: 24px;
+    padding-top: 20px 2px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #007bff; /* Header color */
+  }
+  
+  .contactUs-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contactUs-form-group input,
+  .contactUs-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contactUs-form-group textarea {
+    resize: vertical;
+  }
+  
+  .contactUs-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px; /* More rounded button */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contactUs-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contactUs-card-data img {
+    margin-right: 10px;
+    width: 24px; /* Ensures consistent icon size */
+    height: 24px;
+  }
+  
+  .contactUs-data {
+    margin-top: 40px;
+  }
+  
+  .contactUs-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+margin: 30px 10px;
+    transition: color 0.3s; /* Smooth color transition on hover */
+  }
+  
+  .contactUs-link:hover {
+    color: #007bff; /* Change color on hover */
+  }
+  
+  .contactUs-assurance-message {
+    font-size: 20px;
+    color: #3b87b9;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contactUs-cards {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+  
+    .contactUs-card {
+      width: 90%; /* Adjust card width for mobile devices */
+    }
+  }
+  
